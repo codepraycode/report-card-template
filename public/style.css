@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  max-width: 700px;
+  padding: 0;
+  background-color: #fefefe;
+}
+.col-4 {
+  padding: 0 5px;
+}
+.top {
+  width: 100%;
+  height: 100px;
+  background-image: url("./white.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin: 0 0 2%;
+}
+
+.banner {
+  background-color: #022014e8;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 2% 0 1%;
+}
+h1,
+p {
+  margin: 0;
+}
+.banner h1 {
+  font-size: 30px;
+  font-family: "Play", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.banner p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px
+}
+.data, .table-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.info {
+  font-size: 13px;
+  background: #d3d3ea;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 6px;
+  border-collapse: separate;
+}
+tr:first-of-type {
+  background-color: #152f21e8;
+  font-size: 15px;
+  border: 1px solid #fff;
+  padding: 2% 0;
+  text-align: center;
+  color: #fefefe;
+}
+
+th:nth-child(2) {
+  width: 55%;
+}
+td {
+  padding: 5px 7px;
+  background-color: #d3d3ea4f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  border-radius: 6px;
+}
+hr {
+  border: 3px solid #422c04;
+  opacity: .9;
+}
+.accumulative-grade {
+  margin: 0 auto;
+  position: relative;
+  width: 85%;
+  justify-content: space-evenly;
+}
+.accumulative-grade div {
+  border-bottom: 2px solid #422c04;
+  line-height: 2;
+  width: 230px;
+}
+.accumulative-grade p{
+  font-size: 13px;
+  font-family: "Rubik", sans-serif;
+}
+.accumulative-grade p span:nth-child(2) {
+  font-weight: 500;
+}
+.cgpa {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  position: absolute;
+  letter-spacing: 1.5px;
+  top: -18px;
+}
+.grading-system {
+  margin-left: 3%;
+}
+.grading-system h5 {
+  font-size: .75rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+.grade {
+  justify-content: space-between;
+}
+.grade .d-flex {
+  width: 24%;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: "Kanit", sans-serif;
+}
+#degree {
+  width: 72%;
+  justify-content: space-around;
+}
+footer {
+  height: 30px;
+  width: 100%;
+  background-color: #022014e8;
+}

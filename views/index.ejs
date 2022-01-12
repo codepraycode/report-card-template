@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&family=Karla:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;500;700;900&family=Play:wght@400;700&family=Kanit:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Exo+2:wght@300;400&family=Mukta:wght@200;300;400;500;600;700&family=Cabin:wght@400;700&family=Josefin+Sans:wght@300;400;500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Report Card</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="banner">
+        <h1>Report Card</h1>
+        <p>FEDERAL UNIVERSITY OF TECHNOLOGY, AKURE</p>
+      </div>
+    </div>
+    <div class="data mb-2">
+      <div class="row">
+        <div class="col-4">
+          <div class="col-12 info">
+            <span class="labels">Name: </span>
+            <span class="d-inline-block"> <%= manifest.name %> </span>
+          </div>
+          <div class="col-12 info mt-2">
+            <span class="labels">Year Level: </span>
+            <span class="d-inline-block"> <%= manifest.level %> Level</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="col-12 info">
+            <span class="labels">Faculty: </span>
+            <span class="d-inline-block"> <%= manifest.faculty %> </span>
+          </div>
+          <div class="col-12 info mt-2">
+            <span class="labels">Major: </span>
+            <span class="d-inline-block"> <%= manifest.major %> </span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="col-12 info">
+            <span class="labels">Matric No.: </span>
+            <span class="d-inline-block"> <%= manifest.matricNumber %> </span>
+          </div>
+          <div class="col-12 info mt-2">
+            <span class="labels">Term: </span>
+            <span class="d-inline-block"> <%= manifest.term %> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="performance row">
+      <div class="col-12">
+        <div class="table-container">
+          <table>
+            <tr>
+              <th>Course Code</th>
+              <th>Course Title</th>
+              <th>Score</th>
+              <th>Grade</th>
+            </tr>
+
+            <% manifest.subjects.forEach((subject) => { %>
+              <tr>
+                <td> <%= subject.courseCode %> </td>
+                <td> <%= subject.courseTitle %> </td>
+                <td> <%= subject.score %> </td>
+                <td> <%= subject.grade %> </td>
+              </tr>
+            <% }); %>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="accumulative-grade mt-4 d-flex">
+      <div>
+        <span class="cgpa">CGPA</span>
+        <p> <span>4.89</span> - <span>First Class</span> </p>
+      </div>
+      <div>
+        <span class="cgpa">GPA</span>
+        <p> <span>4.71</span> - <span>First Class</span> </p>
+      </div>
+    </div>
+    <hr>
+    <div class="grading-system mb-3">
+      <h5 class="mb-2">GRADING SYSTEM</h5>
+      <div class="grade d-flex">
+        <div class="d-flex">
+          <div>
+            <p>A - 70-100</p>
+            <p>B - 60-69</p>
+            <p>C - 59-50</p>
+          </div>
+          <div>
+            <p>D - 49-40</p>
+            <p>F - 39-below</p>
+          </div>
+        </div>
+        <div class="d-flex" id="degree">
+          <div>
+            <p><span class="d-inline-block">First Class</span> - <span class="d-inline-block">4.5-5.0</span></p>
+            <p><span class="d-inline-block">Second Class(Upper Division)</span> - <span class="d-inline-block">3.5-4.49</span></p>
+            <p><span class="d-inline-block">Second Class(Lower Division)</span> - <span class="d-inline-block">2.40-3.49</span></p>
+          </div>
+          <div>
+            <p><span class="d-inline-block">Third Class</span> - <span class="d-inline-block">1.50-2.39</span></p>
+            <p><span class="d-inline-block">Pass degree</span> - <span class="d-inline-block">1.00-1.49</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+
+  <script src="bootstrap.bundle.min.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>
