@@ -1,0 +1,86 @@
+{
+    "school": {
+        "logo": "<image>",
+        "address": "",
+        "contacts": "",
+        "emails": "",
+        "website": ""
+    },
+    "student": {
+        "name": "",
+        "passport": "",
+        "admission_no": "",
+        "class": "",
+        "gender": "",
+        "date_of_birth": "",
+        "parents/sponsors": ""
+    },
+    "terminal_duration": {
+        "session": "",
+        "term": "",
+        "term_began": "",
+        "term_ended": "",
+        "next_term_begins": ""
+    },
+    "attendance_summary": {
+        "no_of_times_school_opens": "",
+        "no_of_times_present": "",
+        "no_of_times_absent": ""
+    },
+    "attributes_&_behavioural_data": {
+        "key_ratings": [{
+                "key": "<A numerical values>",
+                "value": "The interpretation"
+            },
+            "<This will be auto-generated with the format above>"
+        ],
+
+        "data": [{
+                "key": "<A numerical values>",
+                "value": "The interpretation"
+            },
+            "<This will be determined by the users, but complying to the format above>"
+        ]
+    },
+
+    "academic_performance": {
+        "grade_scale": [{
+                "key": "<A range like 70-100>",
+                "value": "The interpretation like A",
+                "remark": ""
+            },
+            "<This will be auto-generated with the format above>"
+        ],
+        "data": [{
+                "subject": "",
+                "ca": "",
+                "exam": "",
+                "total": "",
+                "class_avg": "",
+                "grade": "<a value from grade scalings>",
+                "position": "",
+                "remark": "<a remark from grade scalings>"
+            },
+            "<This will be auto-generated with the format above>"
+        ],
+        "total_obtainable": "",
+        "total_obtained": "",
+        "percentage": "",
+        "no_of_pupils_in_class": "",
+        "general_remark": "",
+        "position": ""
+    },
+    "comments": {
+        "teacher": {
+            "name": "",
+            "comment": "",
+            "signature": ""
+        },
+        "principal": {
+            "name": "",
+            "comment": "",
+            "signature": ""
+        }
+    }
+
+}
