@@ -1,84 +1,92 @@
 {
     "school": {
         "logo": "<image>",
-        "address": "",
-        "contacts": "",
-        "emails": "",
-        "website": ""
+        "name": "Grenielle Montessory School",
+        "common_name": "Grenielle School",
+        "address": "P.O Box 123, Behind Clai street, Lagos",
+        "contacts": "+234 810 000 0000, +234 900 000 0000",
+        "emails": "info@grenielle.com",
+        "website": "wwww.grenielleschool.com"
     },
     "student": {
-        "name": "",
-        "passport": "",
-        "admission_no": "",
-        "class": "",
-        "gender": "",
-        "date_of_birth": "",
-        "parents/sponsors": ""
+        "name": "Lorem ISakoo G",
+        "passport": "<image>",
+        "admission_no": "GNK/2012/002",
+        "class": "SS 2B",
+        "gender": "Male",
+        "date_of_birth": "12/04/2001",
+        "parents/sponsors": "Mr. Lorem"
     },
     "terminal_duration": {
-        "session": "",
-        "term": "",
-        "term_began": "",
-        "term_ended": "",
-        "next_term_begins": ""
+        "session": "2018/2019 Academic Session",
+        "term": "1st term",
+        "term_began": "19/01/2018",
+        "term_ended": "12/07/2018",
+        "next_term_begins": "04/08/2018"
     },
     "attendance_summary": {
-        "no_of_times_school_opens": "",
-        "no_of_times_present": "",
-        "no_of_times_absent": ""
+        "no_of_times_school_opens": "152",
+        "no_of_times_present": "150",
+        "no_of_times_absent": "2"
     },
     "attributes_&_behavioural_data": {
         "key_ratings": [{
-                "key": "<A numerical values>",
-                "value": "The interpretation"
-            },
-            "<This will be auto-generated with the format above>"
-        ],
+            "5": "Very Responsible",
+            "4": "A little Responsible",
+            "3": "Responsible",
+            "2": "Not Responsible",
+            "1": "Far from Responsible"
+        }],
 
         "data": [{
-                "key": "<A numerical values>",
-                "value": "The interpretation"
+                "label": "Obedience",
+                "point": "4"
             },
-            "<This will be determined by the users, but complying to the format above>"
+            {
+                "label": "Attentiveness",
+                "point": "5"
+            },
+            {
+                "label": "Activeness",
+                "point": "4"
+            }
         ]
     },
 
     "academic_performance": {
-        "grade_scale": [{
-                "key": "<A range like 70-100>",
-                "value": "The interpretation like A",
-                "remark": ""
-            },
-            "<This will be auto-generated with the format above>"
+        "grade_scale": [
+            { "key": "70-100", "value": "A", "remark": "EXCELLENT" },
+            { "key": "60-69", "value": "B", "remark": "VERY GOOD" },
+            { "key": "50-59", "value": "C", "remark": "GOOD" },
+            { "key": "45-49", "value": "D", "remark": "FAIR" },
+            { "key": "0-44", "value": "F", "remark": "FAILED" }
         ],
         "data": [{
-                "subject": "",
-                "ca": "",
-                "exam": "",
-                "total": "",
-                "class_avg": "",
-                "grade": "<a value from grade scalings>",
-                "position": "",
-                "remark": "<a remark from grade scalings>"
-            },
-            "<This will be auto-generated with the format above>"
-        ],
-        "total_obtainable": "",
-        "total_obtained": "",
-        "percentage": "",
-        "no_of_pupils_in_class": "",
-        "general_remark": "",
-        "position": ""
+            "subject": "Mathematics",
+            "ca": "25",
+            "exam": "40",
+            "total": "65",
+            "class_avg": "62",
+            "percentage": "0.65",
+            "grade": "A",
+            "position": "1",
+            "remark": "Excellent"
+        }],
+        "total_obtainable": "100",
+        "total_obtained": "65",
+        "percentage": "0.65",
+        "no_of_pupils": "12",
+        "general_remark": "Excellent",
+        "position": "1"
     },
+
     "comments": {
         "teacher": {
-            "name": "",
-            "comment": "",
+            "comment": "Satisfactory",
             "signature": ""
         },
         "principal": {
-            "name": "",
-            "comment": "",
+            "comment": "Satisfactory",
             "signature": ""
         }
     }
