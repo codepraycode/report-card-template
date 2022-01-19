@@ -205,15 +205,19 @@ td {
 .attributes .d-flex {
   justify-content: space-between;
 }
+.attribute {
+  border-right: 4px solid #42506b;
+}
 .attribute, .points {
   height: 302px;
   font-size: 18px;
   text-align: left;
   padding-left: 15%;
-  width: 69%;
+  width: 70%;
 }
 .points {
   width: 30%;
+  border-left: 4px solid #42506b;
   text-align: center;
   padding: 0;
 }
@@ -235,4 +239,9 @@ td {
   height: 200px;
   border-radius: 12px;
   border: 1px solid #42506b;
+}
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: #42506b;
 }
