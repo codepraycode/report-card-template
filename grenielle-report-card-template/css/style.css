@@ -182,7 +182,7 @@ td {
 }
 
 .grades,.range, .remarks, .attribute, .points {
-  width: 32%;
+  width: 34%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -191,6 +191,18 @@ td {
   font-size: 16px;
   text-align: center;
   background-color: #42506b12;
+}
+.grades {
+  border-right: 4px solid #42506b;
+
+}
+.range {
+  border: 4px solid #42506b;
+  border-top: 0;
+  border-bottom: 0;
+}
+.remarks {
+  border-left: 4px solid #42506b;
 }
 .stats {
   width: 100%;
