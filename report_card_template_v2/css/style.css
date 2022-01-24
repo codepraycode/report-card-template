@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+    max-width: 2480px;
+    padding: 0;
+    max-height: 3508px;
+    position: relative;
+}
+
+.col-4 {
+    padding: 0 5px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    background-image: url("../images/gradientbg.svg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0 0 1%;
+}
+
+.school-contacts {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.school-contacts h3 {
+    font-size: 1.3rem;
+}
+
+.hook {
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    position: absolute;
+    right: 5%;
+    z-index: -1;
+    background-color: #42506b;
+    top: 10px;
+    transform: rotate(90deg);
+}
+
+.hook:nth-of-type(2) {
+    left: 5%;
+}
+
+.school-title {
+    color: #000;
+    text-align: center;
+}
+
+.school-title h1 {
+    font-family: "Kanit", sans-serif;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.left {
+    width: 49%;
+}
+
+.right {
+    width: 49%;
+}
+
+.student-data {
+    /* border: 1px solid #42506b;
+  border-radius: 6px; */
+    width: 100%;
+    color: #000;
+}
+
+.student-data h4,
+.duration h4,
+.grading-system h6,
+.attributes h6,
+.comments h6 {
+    font-family: "Rubik", sans-serif;
+    padding: 5px 15px;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+    background-color: #42506b;
+}
+
+.image {
+    width: 320px;
+    height: 340px;
+    border-radius: 5px;
+    background-image: url('../images/passport.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h6,
+p {
+    margin: 0;
+}
+
+.infos {
+    width: 100%;
+}
+
+.info {
+    padding: 0 2%;
+    font-family: "Mukta", sans-serif;
+}
+
+.info div {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    height: 35px;
+}
+
+.info .col-5 {
+    width: 100%;
+}
+
+.w-82 {
+    width: 82% !important;
+}
+
+.info .input {
+    margin-left: 4%;
+    height: 100%;
+    font-weight: 300;
+}
+
+.duration {
+    width: 100%;
+}
+
+.duration h4,
+.grading-system h6,
+.attributes h6,
+.comments h6 {
+    text-align: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.duration table {
+    width: 100%;
+}
+
+.duration tr:first-of-type {
+    background-color: #42506b24;
+    color: #42506b;
+}
+
+th {
+    text-align: center;
+}
+
+tr {
+    height: 40px;
+}
+
+td {
+    background-color: #42506b09;
+    font-family: "Mukta", sans-serif;
+    text-align: center;
+    color: #000;
+}
+
+.section-2 table {
+    color: #000;
+    border-radius: 5px;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.section-2 table tr:first-of-type {
+    background-color: #42506b;
+    color: #fff;
+}
+
+.section-2 th:first-of-type {
+    width: 50%;
+    padding-left: 5%;
+    text-align: left;
+}
+
+.section-2 tr td:first-child {
+    padding-left: 5%;
+    text-align: left;
+}
+
+.grading-system {
+    width: 100%;
+}
+
+.grading-system h6 {
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.grading-system .d-flex {
+    justify-content: space-between;
+}
+
+.grades,
+.range,
+.remarks,
+.attribute,
+.points {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 380px;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    background-color: #42506b12;
+}
+
+.grades {
+    border-right: 4px solid #42506b;
+}
+
+.range {
+    border: 4px solid #42506b;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.remarks {
+    border-left: 4px solid #42506b;
+}
+
+.stats {
+    width: 100%;
+    background-color: #42506b85;
+    margin: 0;
+    line-height: 2;
+}
+
+.stats .d-flex {
+    font-size: 12px;
+    justify-content: space-around;
+}
+
+.attributes .d-flex {
+    justify-content: space-between;
+}
+
+.attribute {
+    border-right: 4px solid #42506b;
+}
+
+.attribute,
+.points {
+    height: 302px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 15%;
+    width: 70%;
+}
+
+.points {
+    width: 30%;
+    border-left: 4px solid #42506b;
+    text-align: center;
+    padding: 0;
+}
+
+.comments {
+    width: 80%;
+    margin: 0 auto;
+    height: 380px;
+    color: #000;
+    border-radius: 8px;
+    border: 1px solid #42506b;
+}
+
+.comment {
+    padding: 2% 4%;
+    width: 50%;
+}
+
+.comment-box {
+    width: 95%;
+    margin: 0 0 0 auto;
+    height: 200px;
+    border-radius: 12px;
+    border: 1px solid #42506b;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #42506b;
+}
